@@ -63,7 +63,7 @@ public class SleepListener implements Listener {
                 }
 
                 // Формируем сообщение для ActionBar с множителем скипа
-                String message = "§bСкорость скипа: §e" + (sleeping * sleeping) + "x";
+                String message = "§b夜晚加速倍率: §e" + (sleeping * sleeping) + "x";
                 for (Player player : sleepingPlayers) {
                     player.sendActionBar(message); // Плавное обновление множителя
                 }
