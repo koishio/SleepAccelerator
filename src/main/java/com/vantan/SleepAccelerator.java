@@ -4,11 +4,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class SleepAccelerator extends JavaPlugin {
     @Override
     public void onEnable() {
-        getLogger().info("SleepAccelerator включен!");
+        getLogger().info("SleepAccelerator Enabled!");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("SleepAccelerator выключен.");
+        getLogger().info("SleepAccelerator Disabled.");
     }
 }
