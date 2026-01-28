@@ -1,5 +1,6 @@
 package com.vantan.sleepaccelerator;
 
+import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
@@ -62,10 +63,9 @@ public class SleepListener implements Listener {
                     world.setTime(time + skipAmount);
                 }
 
-                // Формируем сообщение для ActionBar с множителем скипа
-                String message = "§b夜晚加速倍率：§e" + (sleeping * sleeping) + "x";
+                String message = "§b夜晚加速倍率: §e" + (sleeping * sleeping) + "x";
                 for (Player player : sleepingPlayers) {
-                    player.sendActionBar(message); // Плавное обновление множителя
+                    player.sendActionBar(Component.text(message));
                 }
             }
         };
